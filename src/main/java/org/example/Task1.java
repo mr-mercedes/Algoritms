@@ -12,7 +12,7 @@ public class Task1 {
     }
 
     void run() {
-        try (Scanner in = new Scanner(System.in);) {
+        try (Scanner in = new Scanner(System.in)) {
             solve(in);
         }
     }
@@ -23,6 +23,7 @@ public class Task1 {
         int answer = febo(Integer.parseInt(number));
         System.out.println(number + "th of febonachi is " + answer);
         System.out.println("Сложность алгоритма O(n^2)");
+
     }
 
     private int febo(int number) {

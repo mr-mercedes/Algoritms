@@ -22,6 +22,7 @@ public class Task2 {
         int answer = feboLine(Integer.parseInt(number));
         System.out.println(number + "th of febonachi is " + answer);
         System.out.println("Сложность алгоритма O(n)");
+
     }
 
     private int feboLine(int number) {
