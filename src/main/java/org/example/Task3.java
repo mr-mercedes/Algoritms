@@ -22,14 +22,9 @@ public class Task3 {
     }
 
     private void solve(Scanner in) {
-        System.out.print("Enter col: ");
-        int col = Integer.parseInt(in.next());
-        System.out.print("Enter row: ");
-        int row = Integer.parseInt(in.next());
-        if (col != row){
-            throw new RuntimeException("Logic error col and row don't equals");
-        }
-        int[][] array = fillArray(col, row);
+        System.out.print("Enter size of matrix: ");
+        int colRow = Integer.parseInt(in.next());
+        int[][] array = fillArray(colRow, colRow);
         printArray(array);
         System.out.println("Sum of main diagonal " + sumOfMainDig(array));
         System.out.println("Sum of minor diagonal " + sumOfMinorDig(array));
