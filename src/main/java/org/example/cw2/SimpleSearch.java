@@ -1,6 +1,6 @@
 package org.example.cw2;
 
-public class SimpleFind {
+public class SimpleSearch {
     public static void main(String[] args) {
         int[] array = {7, 2, 3, 5, 4, 9, 1, 6, 8};
         int value = 5;
