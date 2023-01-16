@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example.hw1;
 /*
 Реализовать сдвиг элементов в массиве на n влево или вправо.
 ```java

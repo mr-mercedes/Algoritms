@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example.hw1;
 /*
 Найти сумму элементов главной диагонали в двумерном массиве. Найти сумму элементов побочной диагонали в двумерном массиве.
  1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 ```java public void findMainDiagonalSum(int[][] matrix) {
