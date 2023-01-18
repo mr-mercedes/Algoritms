@@ -5,5 +5,5 @@ public enum Brand {
     Asos,
     MacNote,
     Eser,
-    Xamiou
+    Xamiou;
 }
