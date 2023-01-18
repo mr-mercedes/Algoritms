@@ -7,13 +7,14 @@ public class Main {
         double[] price= {100, 200, 300, 400, 500, 600, 700, 800};
         int[] ram = {4, 8, 16, 20, 24, 28, 32};
         int size = 50;
-        ArrayList<Notebook> notebooks = generateNotebooks(price, ram,size);
+        ArrayList<Notebook> notebooks = generateNotebooks(price,ram,size);
+        System.out.println("\n\t_______Origin array________\n");
         printNoteBooks(notebooks);
-        System.out.println("\n___________________________\n");
+        System.out.println("\n\t_______Price sorted array________\n");
         printNoteBooks(SortNotebook.priceSortNotebook(notebooks));
-        System.out.println("\n___________________________\n");
+        System.out.println("\n\t_______RAM sorted array_____\n");
         printNoteBooks(SortNotebook.ramSortNotebook(notebooks));
-        System.out.println("\n___________________________\n");
+        System.out.println("\n\t_______Brand sorted array______\n");
         printNoteBooks(SortNotebook.brandSortNotebook(notebooks));
 
     }
