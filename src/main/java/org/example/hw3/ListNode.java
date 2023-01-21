@@ -20,15 +20,53 @@ public class ListNode implements Iterable<Integer> {
     }
 
     public static class ListNodeUtils {
-        public ListNode addFirst(int value){
-            // 2 - 3 - 4
-            return null;
-        }
-        public  ListNode removeFirst(ListNode node) {
-            // TODO: 19.01.2023
-            return null;
+        private ListNode head;
+        private ListNode tail;
+
+        public void addFirst(int value) {
+            ListNode a = new ListNode();
+            a.val = value;
+            if (head == null) {
+                head = a;
+            } else {
+                a.next = head;
+                head = a;
+            }
         }
 
+        public void removeFirst() {
+            if (head == null) {
+                return;
+            }
+            if (head == tail) {
+                head = null;
+                tail = null;
+                return;
+            }
+            head = head.next;
+        }
+        public void reverseList(){
+            ListNode reversedPart = null;
+            ListNode current = head;
+            while (current != null){
+                ListNode next = current.next;
+                current.next = reversedPart;
+                reversedPart = current;
+                current = next;
+            }
+            head = reversedPart;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            ListNode iterator = this.head;
+            while (iterator != null) {
+                sb.append(iterator.val).append(" ");
+                iterator = iterator.next;
+            }
+            return sb.toString();
+        }
     }
 
     @Override
@@ -55,26 +93,6 @@ public class ListNode implements Iterable<Integer> {
             node = node.next;
             return toReturn;
         }
-
-        @Override
-        public void remove() {
-            // TODO: 19.01.2023
-        }
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder("[");
-
-        ListNode iterator = this;
-        while (iterator != null) {
-            builder.append(iterator.val).append(" -> ");
-            iterator = iterator.next;
-        }
-
-        builder.append("]");
-
-        return builder.toString();
     }
 }
 
