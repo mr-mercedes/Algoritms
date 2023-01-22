@@ -1,7 +1,6 @@
-package org.example.seminar3;
+package org.example.s3;
 
 
-import java.util.Arrays;
 import java.util.Objects;
 
 public class Cat extends Animal {

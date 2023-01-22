@@ -1,4 +1,4 @@
-package org.example.seminar3;
+package org.example.s3;
 
 import java.util.Objects;
 

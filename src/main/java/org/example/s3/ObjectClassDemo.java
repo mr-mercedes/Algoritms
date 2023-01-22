@@ -1,8 +1,7 @@
-package org.example.seminar3;
+package org.example.s3;
 
 
 import java.lang.reflect.Field;
-import java.util.Comparator;
 
 public class ObjectClassDemo {
 
